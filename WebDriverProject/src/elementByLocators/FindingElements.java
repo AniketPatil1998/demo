@@ -15,12 +15,12 @@ public class FindingElements {
 		
 		WebDriver d=new ChromeDriver();
 		d.get("http://www.w3schools.com");
-		//d.findElement(By.linkText("Learn Java")).click();
-	//d.findElement(By.xpath("//a[@title='Search W3Schools']")).click();
-	//d.findElement(By.xpath("//input[@name='search']")).sendKeys("java");
-	//d.findElement(By.className("gsc-search-button gsc-search-button-v2")).click();
-	//d.findElement(By.linkText("Learn Java")).click();
-	//d.findElement(By.partialLinkText("Java Strings")).click();
+		d.findElement(By.linkText("Learn Java")).click();
+	d.findElement(By.xpath("//a[@title='Search W3Schools']")).click();
+	d.findElement(By.xpath("//input[@name='search']")).sendKeys("java");
+	d.findElement(By.className("gsc-search-button gsc-search-button-v2")).click();
+	d.findElement(By.linkText("Learn Java")).click();
+	d.findElement(By.partialLinkText("Java Strings")).click();
 	
 //		List<WebElement> list= d.findElements(By.tagName("a"));
 //		System.out.println(list.size());
@@ -32,7 +32,7 @@ public class FindingElements {
 //		}
 //			
 //		}
-	//d.close();
+	d.close();
 	}
 
 }
